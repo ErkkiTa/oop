@@ -3,7 +3,6 @@
 function route ($page) {
 
     global $pages;
-
     if (empty($page)) {
         $page = 'home';
     } else if (!in_array($page, array_keys($pages))) {

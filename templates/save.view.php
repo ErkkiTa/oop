@@ -33,7 +33,7 @@
 <h2>Save</h2>
 <form method="post" action="/?p=save<?php echo !empty($id) ? '&id=' . $id : ""; ?>">
     <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description">Kirjeldus</label>
         <input
             type="text"
             class="form-control"
@@ -50,7 +50,7 @@
             name="is_complete"
             <?php echo isset($task) ? $task->is_completed == 1 ? 'checked' : "" : ""; ?>
         >
-        <label class="form-check-label" for="is_complete">Is Complete</label>
+        <label class="form-check-label" for="is_complete">Tehtud</label>
     </div>
-    <button type="submit" class="btn btn-primary" name="action" value="insert">Save</button>
+    <button type="submit" class="btn btn-primary" name="action" value="insert">Salvesta</button>
 </form>

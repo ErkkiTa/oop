@@ -15,7 +15,9 @@
             <td><?php echo $task->added; ?></td>
             <td><?php echo $task->edited; ?></td>
             <td><a href="/?p=save&id=<?php echo $task->id; ?>">Muuda</a></td>
+
             <td><a href="/?p=delete&id=<?php echo $task->id; ?>">Delete</a></td>
+            
         </tr>
     <?php } endif; ?>
 </table>
